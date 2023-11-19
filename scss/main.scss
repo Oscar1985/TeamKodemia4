@@ -1,3 +1,17 @@
-* {
+body {
   background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "_navbar.scss";
+@import "_footer.scss";
+
+/* media query o breakpoint para tablets */
+/* (tablets en vertical(portrait) y celulares mas grandes, 600px en adelante) */
+@media screen and (min-width: 600px) {
+}
+
+/* media query para laptops peque;as en adelante */
+/* (laptops/monitores pequeñas, 992px en adelante) */
+@media screen and (min-width: 992px) {
 }
