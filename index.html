@@ -21,7 +21,7 @@
     <header class="navBar">
       <div class="navBarContainer">
         <div class="menuIcon">
-          <span class="material-symbols-outlined"> menu </span>
+          <span class="material-symbols-outlined Hamburger"> menu </span>
         </div>
         <div class="logoDevTo">
           <a href="https://dev.to/" target="_blank">
@@ -38,19 +38,20 @@
         </div>
         <div class="searchBarContainer">
           <form
+            class="hideElement"
             method="get"
             action="/search"
             role="search"
             accept-charset="UTF-8"
           >
             <input class="searchBarForm" type="text" placeholder="Search..." />
-            <div class="menuIcon">
-              <span class="material-symbols-outlined Lupa"> search </span>
-            </div>
           </form>
+          <div class="menuIcon LupaDiv">
+            <span class="material-symbols-outlined Lupa"> search </span>
+          </div>
         </div>
         <div class="flexContainer">
-          <span>
+          <span class="hideElement">
             <a href="#" class="LogInLink">Log in</a>
           </span>
           <span>

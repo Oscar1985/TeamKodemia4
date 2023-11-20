@@ -122,3 +122,28 @@ header {
   margin-left: 10px;
   margin-right: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .hideElement {
+    display: none;
+  }
+
+  .LupaDiv {
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .Lupa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Hamburger {
+    display: none;
+  }
+}
