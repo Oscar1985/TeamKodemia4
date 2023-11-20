@@ -4,10 +4,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.navBar {
+header {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
   background-color: whitesmoke;
 }
 
@@ -132,9 +131,8 @@ footer {
   position: fixed;
   z-index: var(--z-sticky);
   background-color: #e5e5e5;
-  display: flexbox;
+  display: inline-flexbox;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 
 p {

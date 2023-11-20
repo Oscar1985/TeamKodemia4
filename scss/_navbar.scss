@@ -14,9 +14,9 @@ $borderColor: #c9c3c3;
   flex-wrap: wrap;
 }
 
-.navBar {
+header {
   width: 100%;
-  height: fit-content;
+  height: auto;
   background-color: whitesmoke;
 }
 
@@ -109,6 +109,7 @@ $borderColor: #c9c3c3;
   text-decoration: underline;
   color: whitesmoke;
 }
+
 .createAccountButton {
   @include borderNavBar;
   border: 1px solid $linksColor;
