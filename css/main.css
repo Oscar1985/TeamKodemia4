@@ -7,7 +7,6 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-color: whitesmoke;
 }
 
 .navBarContainer {
@@ -15,14 +14,15 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
-  position: relative;
+  position: fixed;
   z-index: var(--z-sticky);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   justify-items: center;
-  border-bottom: 1px solid #c9c3c3;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: white;
 }
 
 .material-symbols-outlined {
@@ -75,7 +75,7 @@ header {
   display: flexbox;
   flex-wrap: wrap;
   border-radius: 5px;
-  border: 1px solid #c9c3c3;
+  border: 1px solid #e2e2e2;
   width: 400px;
   height: 25px;
   padding: 8px;
@@ -131,7 +131,7 @@ header {
     left: 0;
   }
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .Hamburger {
     display: none;
   }
@@ -250,6 +250,98 @@ li {
   margin-right: 2em;
 }
 
+.wrapperRight {
+  margin-top: 70px;
+  margin-bottom: 250px;
+}
+
+aside {
+  font-weight: 300;
+  float: right;
+}
+
+h5 {
+  color: #404040;
+  font-family: Consolas, monospace;
+}
+
+.sideBarRightHeader:hover h3 {
+  text-decoration: none;
+  color: #3b49df;
+}
+
+.sideBarRightHeader {
+  text-decoration: none;
+}
+.sideBarRightHeader h3 {
+  color: #404040;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tarjetaSideBarRight {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 13px;
+}
+
+.tarjetaLinks {
+  border-top: 1px solid #e2e2e2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sideBarRightLinks:hover {
+  text-decoration: none;
+  color: #3b49df;
+}
+
+.sideBarRightLinks {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+}
+
+.sideBarRightComment {
+  text-decoration: none;
+  color: #575757;
+  font-size: 14px;
+}
+
+.artSideBarRightContainer {
+  border-bottom: 1px solid #e2e2e2;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 13px;
+}
+
+.artSideBarRight:hover {
+  text-decoration: none;
+  color: #3b49df;
+  background-color: white;
+}
+
+.artSideBarRight {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+  aside {
+    display: none;
+  }
+}
 /* media query o breakpoint para tablets */
 /* (tablets en vertical(portrait) y celulares mas grandes, 600px en adelante) */
 /* media query para laptops peque;as en adelante */

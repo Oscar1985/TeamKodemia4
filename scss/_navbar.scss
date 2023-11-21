@@ -1,7 +1,7 @@
 $buttonColor: #262626;
 $txtColorLight: #575757;
 $linksColor: #3b49df;
-$borderColor: #c9c3c3;
+$borderColor: #e2e2e2;
 
 @mixin borderNavBar {
   -webkit-border-radius: 5px;
@@ -17,7 +17,6 @@ $borderColor: #c9c3c3;
 header {
   width: 100%;
   height: auto;
-  background-color: whitesmoke;
 }
 
 .navBarContainer {
@@ -25,7 +24,7 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
-  position: relative;
+  position: fixed;
   z-index: var(--z-sticky);
   display: flex;
   flex-direction: row;
@@ -33,6 +32,7 @@ header {
   justify-content: center;
   justify-items: center;
   border-bottom: 1px solid $borderColor;
+  background-color: white;
 }
 
 .material-symbols-outlined {
@@ -142,7 +142,7 @@ header {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .Hamburger {
     display: none;
   }
