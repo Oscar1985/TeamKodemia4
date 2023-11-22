@@ -1,0 +1,149 @@
+$buttonColor: #262626;
+$txtColorLight: #575757;
+$linksColor: #3b49df;
+$borderColor: #e2e2e2;
+
+@mixin borderNavBar {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@mixin flexStyle {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.navBarContainer {
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  z-index: var(--z-sticky);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border-bottom: 1px solid $borderColor;
+  background-color: white;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  color: $buttonColor;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.menuIcon {
+  display: inline-flex;
+  padding: 5px;
+  margin: 5px;
+}
+
+.Lupa {
+  font-size: 35px;
+}
+
+.logoDevTo {
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.searchBarContainer {
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  .menuIcon {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+}
+
+.searchBarForm:hover {
+  @include borderNavBar;
+  border: 1px solid $buttonColor;
+}
+
+.searchBarForm {
+  @include flexStyle;
+  @include borderNavBar;
+  border: 1px solid $borderColor;
+  width: 400px;
+  height: 25px;
+  padding: 8px;
+  color: $txtColorLight;
+  font-size: medium;
+}
+
+.LogInLink:hover {
+  text-decoration: underline;
+  color: $linksColor;
+}
+
+.LogInLink {
+  margin-left: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: $txtColorLight;
+}
+
+.createAccountButton:hover {
+  background-color: $linksColor;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.createAccountButton {
+  @include borderNavBar;
+  border: 1px solid $linksColor;
+  color: $linksColor;
+  font-weight: 500;
+  text-decoration: none;
+  width: 125px;
+  height: 25px;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hideElement {
+    display: none;
+  }
+
+  .LupaDiv {
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .Lupa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .Hamburger {
+    display: none;
+  }
+}

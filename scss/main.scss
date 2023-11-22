@@ -1,3 +1,30 @@
-* {
+body {
   background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 90px;
+  .commitcontent {
+    flex: 1 0 auto;
+  }
+}
+
+@import "navbar";
+@import "footer";
+@import "right";
+@import "cards";
+
+/* media query o breakpoint para tablets */
+/* (tablets en vertical(portrait) y celulares mas grandes, 600px en adelante) */
+@media screen and (min-width: 600px) {
+}
+
+/* media query para laptops peque;as en adelante */
+/* (laptops/monitores pequeñas, 992px en adelante) */
+@media screen and (min-width: 992px) {
 }
