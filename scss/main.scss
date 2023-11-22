@@ -3,9 +3,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@import "_navbar.scss";
-@import "_footer.scss";
-@import "_right.scss";
+.mainwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 90px;
+  .commitcontent {
+    flex: 1 0 auto;
+  }
+}
+
+@import "navbar";
+@import "footer";
+@import "right";
+@import "cards";
 
 /* media query o breakpoint para tablets */
 /* (tablets en vertical(portrait) y celulares mas grandes, 600px en adelante) */
